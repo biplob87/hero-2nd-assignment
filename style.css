@@ -7,7 +7,6 @@ body {
 /* header section styles */
 .header-section {
   background: #2d25a0;
-  width: 100%;
   min-height: 677px;
 }
 .head-container {
@@ -222,4 +221,57 @@ footer {
 .footer-info p {
   font-size: 18;
   margin: 20px 0;
+}
+/* Responsive styles */
+@media only screen and (max-width: 668px) {
+  /* header responsive */
+  .head-container {
+    flex-direction: column;
+    font-size: 36px;
+    padding: 16px;
+  }
+  .head-info {
+    margin-bottom: 40px;
+  }
+  .head-banner img {
+    width: 100%;
+  }
+  /* gellary responsive */
+  .gellary-container {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* subscribe responsive */
+  .subscribe-header {
+    font-size: 24px;
+  }
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* highlight responsive */
+  .highlight-container {
+    flex-direction: column;
+    padding: 16px;
+  }
+  .highlight-info {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .highlight-banner img {
+    width: 100%;
+  }
+  /* standing responsive */
+  .standing-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .standing-container {
+    font-size: 14px;
+    grid-template-columns: 9% 28% repeat(4, 3%) repeat(4, 5%) 30%;
+  }
 }
