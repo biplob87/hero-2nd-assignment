@@ -21,7 +21,7 @@ body {
 .head-banner img {
   width: 556px;
   height: 438px;
-  transition: transform 1.5s ease-in-out;
+  transition: transform 1s ease-in-out, rotate 1s ease-in-out;
 }
 .head-banner:hover img {
   transform: translate(-200px, 200px) rotate(360deg);
@@ -223,6 +223,7 @@ footer {
   margin: 20px 0;
 }
 /* Responsive styles */
+
 @media only screen and (max-width: 668px) {
   /* header responsive */
   .head-container {
@@ -264,14 +265,25 @@ footer {
     width: 100%;
   }
   /* standing responsive */
+  .standing-section {
+  }
   .standing-info {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  }
+  .standing-headline h1 {
+    font-size: 15px;
   }
   .standing-container {
-    font-size: 14px;
-    grid-template-columns: 9% 28% repeat(4, 3%) repeat(4, 5%) 30%;
+    font-size: 10px;
+    grid-template-columns: 10% 30% repeat(4, 3%) repeat(4, 5%) 28%;
+  }
+  .box1 {
+    padding-left: 10px;
+  }
+  .box2 {
+    padding-left: 0px;
+    background: lightseagreen;
+    display: flex;
+    justify-content: center;
   }
 }
